@@ -1,0 +1,229 @@
+.cont {
+  margin-top: 120px;
+}
+.cont:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cont h2 {
+  font-family: 'Verdana bold';
+  font-size: 50px;
+  color: #4f4f4f;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 90px;
+  margin-bottom: 60px;
+  position: relative;
+}
+.cont h2:after {
+  content: "";
+  position: absolute;
+  display: inherit;
+  top: 100%;
+  height: 7px;
+  width: 80px;
+  background-color: #0f8b8d;
+}
+.news-box {
+  display: flex;
+  margin-bottom: 105px;
+}
+.news-box.two .pic-box {
+  box-shadow: -15px 0px 40px 5px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+.news-box .pic-box {
+  display: inline-block;
+  width: 50%;
+  background-image: url('../img/news.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 15px 10px 40px 5px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+.news-box .text-box {
+  display: inline-block;
+  width: 50%;
+  padding: 40px 0;
+}
+.news-box .text-box .text-head {
+  background-color: #0f8b8d;
+  padding: 55px 35px;
+}
+.news-box .text-box .text-head h3 {
+  font-size: 35px;
+  font-family: 'Arimo bold';
+  color: white;
+  margin: 0;
+}
+.news-box .text-box .text-body {
+  line-height: 23px;
+    font-family: 'Verdana regular';
+    font-size: 13px;
+  padding: 50px 35px;
+  background-color: #ecf0f0;
+}
+.news-box .text-box .text-body p {
+  color: #4f4f4f;
+  line-height: 23px;
+  font-family: 'Verdana regular';
+  font-size: 13px;
+  margin-bottom: 50px;
+}
+.main-text {
+  display: flex;
+}
+.main-text .left {
+  min-width: 280px;
+}
+.main-text .left .block {
+  margin-bottom: 35px;
+}
+.main-text .left .block p {
+  font-size: 20px;
+  color: #282828;
+  font-family: 'Arimo bold';
+  margin-bottom: 10px;
+}
+.main-text .left .block .fa {
+  font-size: 20px;
+  color: #5c6880;
+}
+.main-text .left .block .fa.fa-pinterest {
+  color: #ce494e;
+}
+.main-text .left .block span {
+  color: #6c738d;
+  font-family: 'Verdana regular';
+  font-size: 15px;
+  letter-spacing: normal;
+}
+.main-text .right {
+  padding-left: 50px;
+}
+.main-text .right .text-block .title {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.main-text .right .text-block p {
+  margin-bottom: 37px;
+}
+.main-text .right .quote {
+  max-width: 860px;
+  padding-left: 20px;
+  position: relative;
+  margin: 50px 0 50px 70px;
+}
+.main-text .right .quote p {
+  font-size: 22px;
+  color: #232323;
+}
+.main-text .right .quote span {
+  text-transform: uppercase;
+}
+.main-text .right .quote:after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: black;
+  left: 0;
+  top: 0;
+}
+.main-text .right img {
+  width: 100%;
+  height: auto;
+  margin: 25px 0 60px 0;
+}
+.main-text .news-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 120px 0;
+}
+.main-text .news-end p {
+  font-size: 20px;
+  color: #282828;
+}
+.main-text .news-end p .tegs {
+  font-size: 15px;
+  color: #8a8a8a;
+  background-color: transparent;
+}
+.main-text .news-end p span {
+  background-color: white;
+}
+.main-text .news-end p .fa {
+  font-size: 20px;
+  color: #5c6880;
+  margin: 0 5px;
+}
+.main-text .news-end p .fa.fa-pinterest {
+  color: #ce494e;
+}
+.text-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-text {
+  margin-bottom: 50px;
+}
+.btnShare {
+  cursor: pointer;
+}
+.btnShare img {
+  width: 30px;
+  height: 30px;
+}
+@media (max-width: 900px) {
+  .news-box {
+    margin-bottom: 50px;
+  }
+  .news-box .pic-box {
+    display: none;
+  }
+  .news-box .text-box {
+    width: 100%;
+  }
+  .main-text {
+    display: block;
+  }
+  .main-text .left {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  .main-text .right {
+    padding-left: 0;
+  }
+  .main-text .right .quote {
+    max-width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .main-text .news-end {
+    display: block;
+  }
+  .main-text .news-end p {
+    margin: 20px 0;
+  }
+  .main-text .left {
+    display: block;
+  }
+  .main-text .left .block {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .main-text .right .quote {
+    margin: 50px 0 50px 0px;
+  }
+  .news-box .text-box .text-head {
+    padding: 40px 25px;
+  }
+  .news-box .text-box .text-head h3 {
+    font-size: 30px;
+  }
+}

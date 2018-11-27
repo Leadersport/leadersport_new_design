@@ -1,0 +1,103 @@
+html, body {
+	letter-spacing: normal;
+	font-family: 'Roboto', sans-serif;
+}
+
+.products .list-item .item-footer .name a {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+/*
+ul, li, a, span, div, p, input, i {
+	color: #909090;
+	font-family: Roboto;
+	font-size: 12px;
+}
+
+.products .list-item {
+	border: 1px solid transparent;
+}
+
+header nav li a,
+.shop-upper-block .input-group .select span,
+.shop-upper-block .input-group .select .select-option li {
+	letter-spacing: normal;
+}
+
+.shop-upper-block .input-group .select span,
+.shop-upper-block .input-group .select .select-option li,
+.shop-upper-block .input-group .select .select-option li a {
+	font-family: Roboto;
+	font-size: 16px;
+	color: #747474;
+}
+
+
+.shop-upper-block .input-group .select span{
+	font-weight: 700;
+
+}
+
+.shop-upper-block .input-group .select{
+	padding: 15px 30px;
+}
+
+aside .body .filtr,
+.products .list-item .item-footer .name a,
+.breadcrumb li a,
+.col-3{
+	text-transform: uppercase;
+}
+
+.icon-group a{
+	color: #252525;
+    font-family: 'Arimo';
+    font-size: 12px;
+}*/
+
+.shop-upper-block .input-group .select .select-option{
+	font-size: 16px; 
+	padding: 15px 30px;
+}
+
+.shop-upper-block .input-group .select:after{
+	top: 15px;
+}
+
+.shop-upper-block .input-group .select .select-option li {
+	padding: 10px 0;
+}
+
+.products .list-item .item-head .stock{
+	letter-spacing: 1.5px;
+}
+
+.sidebar {
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+}
+
+.sidebar .filter-head-sc {
+	font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.sidebar .filtr .parent {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.products .list-item .item-footer .name a {
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.products .list-item .item-footer .product-name-wf {
+	font-size: 13px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+

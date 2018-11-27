@@ -1,0 +1,261 @@
+main .page-text {
+  margin-bottom: 100px;
+}
+main .page-text h2 {
+  font-size: 50px;
+  font-family: 'Verdana bold';
+  color: #4f4f4f;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+main .page-text p {
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Verdana regular';
+  color: #686868;
+  text-transform: uppercase;
+}
+main .page-text span {
+  font-size: 20px;
+  font-family: 'Verdana bold';
+  color: #0f8b8d;
+}
+main .page-text .page-switch {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main .page-text .page-switch .btn {
+  padding: 20px 70px 20px 15px;
+  background-color: #e6e6e6;
+  font-family: 'Verdana regular';
+  font-size: 14px;
+  color: #7e7e7e;
+  position: relative;
+  margin: 10px 15px;
+}
+main .page-text .page-switch .btn span {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url('../svg/delete-button-grey.svg') no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+}
+main .page-text .page-switch .btn.active {
+  background-color: #0f8b8d;
+  color: white;
+}
+main .page-text .page-switch .btn i {
+  cursor: pointer;
+}
+main .page-text .page-switch .btn.active i {
+  color: #fff;
+  padding: 19px 0px 19px 0;
+}
+main .page-text .page-switch .btn.active span {
+  background: url('../svg/delete-button.svg') no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+}
+main .slider-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  display: none;
+}
+main .slider-container.active {
+  display: block;
+}
+main .slider-container .slides-row {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  min-width: 100%;
+  transition: all 0.5s ease;
+}
+main .slider-container .slides-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+main .sl {
+  float: right;
+  position: relative;
+}
+main .sl .arrow {
+  margin: 0 50px;
+  cursor: pointer;
+}
+main .sl .arrow.right img {
+  transform: rotate(180deg);
+}
+main .sl .arrow img {
+  width: 20px;
+  height: auto;
+}
+main .content {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+main .col-3 {
+  width: 460px;
+}
+main .list-item {
+  border: 1px solid #c6c6c6;
+  margin: 0 15px;
+  margin-bottom: 30px;
+}
+main .list-item.add-new {
+  cursor: pointer;
+}
+main .list-item.add-new .item-body img {
+  height: 265px;
+  transition: all 0.5s ease;
+}
+main .list-item.add-new:hover .item-body img {
+  transform: scale(1.2);
+}
+main .list-item .item-head {
+  background-color: #ecf0f0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 25px;
+}
+main .list-item .item-head .price {
+  font-family: 'Arimo bold';
+  font-size: 19px;
+  color: #707070;
+}
+main .list-item .item-head .icon a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url('../svg/delete-button-grey.svg') no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+}
+main .list-item .item-head .icon a:hover {
+  background: url('../svg/delete-button-green.svg') no-repeat center center;
+  background-size: cover;
+}
+main .list-item .item-body {
+  background-color: #ecf0f0;
+  padding: 30px 25px;
+  text-align: center;
+}
+main .list-item .item-body img {
+  width: auto;
+  height: 170px;
+}
+main .list-item .item-footer {
+  background-color: #f7f7f7;
+  text-align: center;
+  border-top: 1px solid #c6c6c6;
+}
+main .list-item .item-footer p {
+  font-size: 16px;
+  padding: 30px 25px;
+  font-family: 'Verdana bold';
+  color: #686868;
+}
+main .list-item .item-footer .name-func {
+  padding: 20px 25px;
+  text-align: left;
+}
+main .list-item .item-footer .name-func h4 {
+  font-family: 'Arimo bold';
+  font-size: 13px;
+  color: #444444;
+  max-width: 250px;
+  margin: 0;
+  display: inline-block;
+}
+main .list-item .item-footer .name-func .icon {
+  width: 27px;
+  height: 27px;
+  float: right;
+}
+main .list-item .item-footer .name-func .icon.heart {
+  background: url('../svg/heart-outline-grey.svg') no-repeat center center;
+  background-size: cover;
+}
+main .list-item .item-footer .name-func .icon.heart:hover {
+  background: url('../svg/heart-outline-green.svg') no-repeat center center;
+  background-size: cover;
+}
+main .list-item .item-footer .name-func .icon.cart {
+  background: url('../svg/shopping-basket%20(4.html)-green.svg') no-repeat center center;
+  background-size: cover;
+  margin-left: 30px;
+}
+main .list-item .item-footer .info {
+  padding: 30px 25px 30px 25px;
+  text-align: left;
+}
+main .list-item .item-footer .info li {
+  font-family: 'Verdana regular';
+  font-size: 15px;
+  color: #686868;
+  margin-bottom: 40px;
+}
+main .list-item .item-footer .info li span {
+  font-family: 'Verdana bold';
+  font-size: 15px;
+  color: #0f8b8d;
+  word-break: break-all;
+}
+@media (max-width: 1000px) {
+  main .page-text .page-switch {
+    display: block;
+    margin: 50px -15px;
+  }
+}
+@media (max-width: 700px) {
+  main .content .col-3 {
+    width: 330px;
+  }
+  main .content .list-item:not(.add-new) .item-body {
+    height: 230px;
+    overflow: hidden;
+  }
+  main .content .list-item:not(.add-new) .item-body img {
+    width: 100%;
+    height: auto;
+  }
+  main .content .list-item:not(.add-new) .item-footer .name-func h4 {
+    max-width: 150px;
+  }
+}
+@media (max-width: 700px) {
+  main .page-text h2 {
+    font-size: 35px;
+  }
+  main .page-text .page-switch {
+    display: block;
+    margin: 50px -15px;
+  }
+  main .page-text .page-switch .btn {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 300px;
+  }
+  main .sl {
+    display: flex;
+    position: relative;
+    float: none;
+  }
+  main .sl .arrow {
+    margin: 0 auto;
+    cursor: pointer;
+  }
+}
